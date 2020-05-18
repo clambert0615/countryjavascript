@@ -12,8 +12,8 @@ let algeria = new Country("Algeria", "Arabic and Berber", "Sup", ["blue", "yello
 let canada = new Country("Canada", "English", "Hello World", ["red", "white", "red"]);
 let france = new Country("France", "French", "Bonjour le monde", ["blue", "white", "red"]);
 
-function SwitchCountry() {
-   let input = prompt("What country would you like to see? Enter USA, Mexico, Algeria, Canada, or France");
+function SwitchCountry(input) {
+  
     
     let country;
 
@@ -45,4 +45,15 @@ function displayColors(country)
     document.getElementById("Color1").style.backgroundColor = country.colors[0];
     document.getElementById("Color2").style.backgroundColor = country.colors[1];
     document.getElementById("Color3").style.backgroundColor = country.colors[2];
+}
+function SwitchCountryByPrompt()
+{
+    let input = prompt("What country would you like to see? Enter USA, Mexico, Algeria, Canada, or France");
+    SwitchCountry(input);
+}
+
+function SwitchCountryByDropDown()
+{
+    let input = document.getElementById("CountryList").value;
+    SwitchCountry(input);
 }

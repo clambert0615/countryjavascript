@@ -14,7 +14,7 @@
             <h2 id="OfficialLanguage"></h2>
             <h2 id="HelloWorld"></h2>
            
-           <select id="CountryList">
+           <select id="CountryList" onchange="SwitchCountryByDropDown()">
                 <option value="USA">USA</option>
                 <option value="Mexico">Mexico</option>
                 <option value="Algeria">Algeria</option>
@@ -23,7 +23,7 @@
 
             </select>
             
-            <button onclick="SwitchCountry()">Swap Country</button>
+            <button onclick="SwitchCountryByPrompt()">Swap Country</button>
         </div>
     </div>
 
